@@ -320,7 +320,7 @@ const logoutController = async (req, res) => {
 
     const user = await User.findByIdAndUpdate(userid, { refresh_token: "" });
 
-    const user = await User.findByIdAndUpdate(userid, { token: "" });
+    
 
     // console.log("Refresh token cleared for user:", user);
 
